@@ -1,0 +1,147 @@
+{
+  "personal": {
+    "name": "Imranur Rahman",
+    "email": "irahman3@ncsu.edu",
+    "phone": "(984) 683-3662",
+    "location": "Raleigh, NC",
+    "website": "imranur-rahman.github.io",
+    "websiteUrl": "https://imranur-rahman.github.io",
+    "linkedin": "LinkedIn",
+    "linkedinUrl": "https://www.linkedin.com/in/imranur-rahman-shimul/"
+  },
+  "summary": "PhD candidate in Software Supply Chain Security (NC State, exp. 2026) with 3+ years of industry experience at Samsung Research. Published at ASE, TOSEM, and ACSAC. Expertise in empirical software engineering, dependency management, program analysis, and LLM-assisted repair. Chromium open-source contributor and competitive CTF problem setter.",
+  "skills": [
+    { "label": "Languages",   "value": "Python, JavaScript, C/C++, Java, TypeScript" },
+    { "label": "Frameworks",  "value": "React, Django, Tensorflow, Keras, PyTorch, LangChain, LLVM" },
+    { "label": "Research",    "value": "Statistical Methods, Program Analysis, Mining Software Repositories, Empirical Methods, Code Language Models" },
+    { "label": "Tools",       "value": "Git, Docker, PostgreSQL, Oracle/SQL, LaTeX, Android" }
+  ],
+  "experience": [
+    {
+      "title": "Graduate Research Assistant",
+      "org": "NC State University",
+      "orgUrl": "https://www.csc.ncsu.edu/",
+      "date": "Aug 2022 – Present",
+      "bullets": [
+        "Designed two novel metrics to characterize dependency-update practices of OSS packages, guiding dependency selection decisions for developers.",
+        "Identified which dependency version constraints (pinning vs. floating) minimize outdated and vulnerable dependencies — published at ASE 2025.",
+        "Measured security-sensitive API usage across open-source packages; compared functionally equivalent packages by security posture.",
+        "Devised a relative-positioning context-collection strategy using hybrid BM25 + FAISS retrieval, winning 3rd Place at JetBrains/Mistral AI's ASE 2025 Context Collection Competition."
+      ]
+    },
+    {
+      "title": "Senior Software Engineer",
+      "org": "Samsung Research Bangladesh",
+      "orgUrl": "https://research.samsung.com/srbd",
+      "date": "Dec 2018 – Jul 2022",
+      "bullets": [
+        "Led a team delivering Media Capture & Playback for Samsung Internet on Galaxy smartwatches using the Chromium engine.",
+        "Added W3C API support that unlocked 50% of Galaxy Store web apps to run on Samsung wearables.",
+        "Shipped two user-facing features — gesture-based volume control (swipe up/down) and predictive buffering for network-interrupted playback.",
+        "Proposed and prototyped a federated-learning recommendation engine to improve suggestions while preserving on-device user privacy."
+      ]
+    },
+    {
+      "title": "Open-Source Contributor",
+      "org": "Chromium Project",
+      "orgUrl": "https://chromium-review.googlesource.com/q/owner:ir.shimul%2540gmail.com",
+      "date": "Jun 2019 – Jul 2022",
+      "bullets": [
+        "Contributed patches across Multimedia, Autofill, and other modules; provided code-review support to fellow contributors."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "PhD, Computer Science",
+      "school": "NC State University",
+      "date": "Aug 2022 – 2026 (exp.)",
+      "detail": "Advisor: Dr. Laurie Williams  ·  Research Domain: Software Supply Chain Security",
+      "advisorUrl": "https://www.csc.ncsu.edu/people/lawilli3"
+    },
+    {
+      "degree": "MSc, Computer Science",
+      "school": "NC State University",
+      "date": "2022 – 2024",
+      "detail": "Key courses: Software Engineering, Software Security, Cryptography, System Attack & Defense, Advanced Network Security, LLM Security, Generative AI for SE"
+    },
+    {
+      "degree": "BSc, Computer Science",
+      "school": "BUET",
+      "date": "2014 – 2018",
+      "detail": null
+    }
+  ],
+  "publications": [
+    {
+      "title": "Which Is Better For Reducing Outdated And Vulnerable Dependencies: Pinning Or Floating?",
+      "venue": "ASE 2025",
+      "venueUrl": "https://arxiv.org/abs/2510.08609",
+      "desc": "Empirical study on which version constraints minimize dependency staleness and CVE exposure."
+    },
+    {
+      "title": "Research Directions In Software Supply Chain Security",
+      "venue": "TOSEM 2025",
+      "venueUrl": "https://dl.acm.org/doi/10.1145/3714464",
+      "desc": "Comprehensive survey and future research agenda for securing the software supply chain."
+    },
+    {
+      "title": "If You Cannot Measure It, You Cannot Secure It",
+      "venue": "JISA 2025",
+      "venueUrl": "https://doi.org/10.1016/j.jisa.2025.104056",
+      "desc": "Proposed and evaluated seven metrics to quantify mitigation effectiveness of security controls."
+    },
+    {
+      "title": "Towards A Taxonomy Of Challenges In Security Control Implementation",
+      "venue": "ACSAC 2024",
+      "venueUrl": "https://ieeexplore.ieee.org/abstract/document/10917356/",
+      "desc": "73-challenge taxonomy across 8 categories, mapped to NIST security controls."
+    },
+    {
+      "title": "Relative Positioning Based Code Chunking For Repository-Level Code Completion",
+      "venue": "ASE 2025 Workshop",
+      "venueUrl": "https://jetbrains-research.github.io/ase2025-context-collection-workshop/",
+      "desc": "Hybrid BM25+FAISS retrieval strategy; achieved 3rd place in JetBrains/Mistral AI competition."
+    },
+    {
+      "title": "How Quickly Do Development Teams Update Their Vulnerable Dependencies?",
+      "venue": "Preprint",
+      "venueUrl": "https://arxiv.org/abs/2403.17382",
+      "desc": "Two metrics characterizing OSS teams' responsiveness to dependency vulnerability disclosures."
+    },
+    {
+      "title": "What's In A Package? Visibility Into Dependencies Via Sensitive API Calls",
+      "venue": "Preprint",
+      "venueUrl": "https://arxiv.org/abs/2408.02846",
+      "desc": "Security-sensitive API analysis across OSS packages to surface hidden dependency risks."
+    },
+    {
+      "title": "SecureImgStego: Keyed Shuffling-based Deep Learning For Secure Steganography",
+      "venue": "IEEE CNS 2023",
+      "venueUrl": "https://ieeexplore.ieee.org/abstract/document/10288753",
+      "desc": "Deep-learning steganography model integrating keyed-shuffling encryption."
+    }
+  ],
+  "patents": [
+    {
+      "title": "Methods And Apparatus For Capturing Puddlegram In Smartphone Camera",
+      "label": "US Patent 2025",
+      "url": "https://patents.google.com/patent/US20250247609A1/en?q=(imranur+rahman)&oq=imranur+rahman&peid=63c83e2a28908%3A2c%3Ae8085f3c"
+    }
+  ],
+  "awards": [
+    {
+      "title": "3rd Place",
+      "detail": "ASE 2025 Context Collection Competition",
+      "detailUrl": "https://lp.jetbrains.com/research/context-collection-competition/?tab-1756138596455-4232=kotlin",
+      "suffix": "(organized by JetBrains & Mistral AI)"
+    }
+  ],
+  "service": [
+    { "label": "AEC Member",        "value": "WiSec '22–'23, CCS '23–'24, USENIX Security '22–'24, PETS '23/'25, OSDI '23, USENIX ATC '23" },
+    { "label": "PC Member",         "value": "MSR4PS '25" },
+    { "label": "Junior PC",         "value": "MSR '24" },
+    { "label": "External Reviewer", "value": "ICNP '21, NDSS '22, USENIX Security '22, FSE '25" },
+    { "label": "CTF Problem Setter","value": "HackPack CTF '24, '25" }
+  ]
+}

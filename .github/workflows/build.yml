@@ -1,0 +1,44 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install LibreOffice
+        run: sudo apt-get install -y libreoffice --no-install-recommends
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Generate resume (DOCX + PDF)
+        run: npm run build
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume
+          path: |
+            output/resume.docx
+            output/resume.pdf
+          retention-days: 90
+
+      - name: Commit outputs back to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-build resume [skip ci]"
+          file_pattern: output/resume.docx output/resume.pdf
