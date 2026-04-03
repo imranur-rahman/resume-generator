@@ -262,7 +262,7 @@ function buildDoc(data) {
   try {
     const sofficeWrapper = path.join(__dirname, "..", "scripts", "soffice.py");
     const cmd = fs.existsSync(sofficeWrapper)
-      ? `python "${sofficeWrapper}" --headless --convert-to pdf "${docxPath}" --outdir "${outDir}"`
+      ? `python3 "${sofficeWrapper}" --headless --convert-to pdf "${docxPath}" --outdir "${outDir}"`
       : `soffice --headless --convert-to pdf "${docxPath}" --outdir "${outDir}"`;
 
     execSync(cmd, { stdio: "pipe" });
